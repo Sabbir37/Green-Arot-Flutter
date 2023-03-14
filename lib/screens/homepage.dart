@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:green_arot_flutter/consts/consts.dart';
 
@@ -11,9 +12,33 @@ class HomePage extends StatelessWidget {
       backgroundColor: lightGreen,
       appBar: AppBar(
         backgroundColor: darkGreen,
-        title: Text('Green Arot'),
+        title: Text(
+          'Green Arot',
+          style: TextStyle(color: whiteColor),
+        ),
       ),
-      body: Container(),
+      body: ListView(
+        children: [
+          Text(
+            'Categories',
+            style: TextStyle(
+              fontFamily: bold,
+              fontSize: 30,
+              color: darkGreen,
+            ),
+          ),
+          // Category(),
+          Text(
+            'Products',
+            style: TextStyle(
+              fontFamily: bold,
+              fontSize: 30,
+              color: darkGreen,
+            ),
+          ),
+          // AllProducts(),
+        ],
+      ),
     );
   }
 }
