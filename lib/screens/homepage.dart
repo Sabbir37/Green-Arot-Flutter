@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:green_arot_flutter/consts/consts.dart';
+import 'package:green_arot_flutter/widgets/category.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -19,23 +20,31 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Text(
-            'Categories',
-            style: TextStyle(
-              fontFamily: bold,
-              fontSize: 30,
-              color: darkGreen,
+          10.heightBox,
+          Center(
+            child: Text(
+              'Categories',
+              style: TextStyle(
+                fontFamily: bold,
+                fontSize: 30,
+                color: darkGreen,
+              ),
             ),
           ),
-          // Category(),
-          Text(
-            'Products',
-            style: TextStyle(
-              fontFamily: bold,
-              fontSize: 30,
-              color: darkGreen,
+          10.heightBox,
+          myCategory(),
+          20.heightBox,
+          Center(
+            child: Text(
+              'Products',
+              style: TextStyle(
+                fontFamily: bold,
+                fontSize: 30,
+                color: darkGreen,
+              ),
             ),
           ),
+          10.heightBox,
           // AllProducts(),
         ],
       ),
