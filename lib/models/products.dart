@@ -15,6 +15,8 @@ class Product with ChangeNotifier {
       required this.description,
       required this.imgUrl,
       required this.price});
+
+  findById(String productId) {}
 }
 
 class Products with ChangeNotifier {
@@ -244,5 +246,11 @@ class Products with ChangeNotifier {
 
   List<Product> get items {
     return [..._items];
+  }
+
+  get id => null;
+
+  Product findById(String id) {
+    return _items.firstWhere((pdt) => pdt.id == id);
   }
 }
