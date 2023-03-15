@@ -15,6 +15,8 @@ class Product with ChangeNotifier {
       required this.description,
       required this.imgUrl,
       required this.price});
+
+  findById(String productId) {}
 }
 
 class Products with ChangeNotifier {
@@ -111,9 +113,144 @@ class Products with ChangeNotifier {
         imgUrl:
             'https://i0.wp.com/treevaly.com/wp-content/uploads/2021/09/Sofeda-plant_Treevaly.com_.png?fit=1080%2C1080&ssl=1',
         price: 280.00),
+
+    // Outdoor
+    Product(
+        id: '11',
+        category: 'outdoor',
+        name: 'araila',
+        description:
+            'Aralia is a striking, multi-stemmed member of the Araliaceae family, a huge family that consists of more than 70 species. With so many types of aralia from which to choose, plant lovers can enjoy this plant in a variety of forms, including deciduous and evergreen shrubs and trees.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2021/09/Araila_Plant_Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 300.00),
+    Product(
+        id: '12',
+        category: 'outdoor',
+        name: 'Bougainville Plant Pink',
+        description:
+            'Bougainvillea is a genus of thorny ornamental vines, bushes, and trees with flower-like spring leaves near its flower. It is a semi-climber and can be grown as a hedge, a shrub, a climber over a sunny wall and also in pots.Bougainvilleas have beautiful, brightly colored bracts, which are specialized leaves that contain the plants flower',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2021/03/Bougainville-Plant-Pink-Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 2100.00),
+    Product(
+        id: '13',
+        category: 'outdoor',
+        name: 'Thai Bel',
+        description:
+            'Bel fruit, (Aegle marmelos), bel also spelled bael, also called Bengal quince, tree of the family Rutaceae, cultivated for its fruit. The plant is native to India and Bangladesh and has naturalized throughout much of Southeast Asia. The unripe fruit, sliced and sun-dried, is traditionally used as a remedy for dysentery and other digestive ailments. The ripe fruit is sweet, aromatic, and cooling. The tree’s wood is yellowish white and hard but not durable.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2021/10/Bael-Fruit-Plant_Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 250.00),
+    Product(
+        id: '14',
+        category: 'outdoor',
+        name: 'Coconut',
+        description:
+            'Coconut is one of Bangladesh’s most profitable crops. It’s a type of tree whose entire structure may be utilized in our daily lives. The tree will grow 2 to 2 and a half feet within 3 years. Flowers may appear after 2.5 to 3 years if adequate care is provided. Flowers will also show up on trees three to four times a year. In comparison to our country, the output rate is three times higher. If the tree is properly cared for, it may produce 200-250 coconuts each year. The tree might live for another 20-25 years.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2021/10/Coconut-Plant_Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 350.00),
+    Product(
+        id: '15',
+        category: 'outdoor',
+        name: 'Thai Jamun',
+        description:
+            'The Jamun is evergreen, fruit plant in Myrataceae family with oblong opposite leaves that are smooth, glossy and having a terpentine smell. Jamun has fragrant white flowers in branched clusters at stem tips and purplish-black oval edible berries.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2021/10/Thai-Jamun-Plant-Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 650.00),
+
+    // Cactus
+    Product(
+        id: '16',
+        category: 'cactus',
+        name: 'Moon Cactus',
+        description:
+            'Moon cactus plants come in vibrant bright colors of hot pink, brilliant orange, and even an almost neon yellow. They are commonly sold as gift plants and make lovely window box or southern exposure houseplants. These are small plants, generally only ½ inch (1 cm.) across, although there are cultivars that get up to 8 inches (20 cm.) in diameter.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2021/08/Moon-Cactus-Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 600.00),
+    Product(
+        id: '17',
+        category: 'Cactus',
+        name: 'Ladyfinger Cactus',
+        description:
+            'This cactus is perfect for the beginner’s succulent garden. Its tubes form dense green and orange clusters, with light yellow or pink flowers in the spring.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2021/09/Ladyfinger-Cactus_Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 500.00),
+    Product(
+        id: '18',
+        category: 'Cactus',
+        name: 'Coral Cactus',
+        description:
+            'The Coral cactus at first glance kind of looks like a lettuce (please don’t eat this), and a type of coral reef…which is where it’s name originates from. This plant that has been transfigured making it very unique, and is really an African succulent, rather than a cactus – although they have similarities.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2021/09/Coral-Cactus_Treevaly.com_-1.png?fit=1080%2C1080&ssl=1',
+        price: 1000.00),
+    Product(
+        id: '19',
+        category: 'bonsai',
+        name: 'Fiscus Bonsai',
+        description:
+            "The Ficus genus belongs to the family of mulberry plants or Moraceae, and it's the most popular indoor tree species for Bonsai beginners.",
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2020/05/China-Bonsai-Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 1500.00),
+    Product(
+        id: '20',
+        category: 'Bonsai',
+        name: 'Jungle Jalebi Bonsai',
+        description:
+            'Age: 40+ Years. Buy Bonsai online at a great deal in Bangladesh. To get real images and videos of this plant, knock us.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2021/07/Jungle-Jalebi-Bonsai-Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 160000.00),
+    Product(
+        id: '21',
+        category: 'Bonsai',
+        name: 'Kamini Bonsai',
+        description:
+            'Kamini Bonsai is a gorgeous natural dwarf type of Kamini. With tiny leaves and scattered ramifications, this plant fulfils the bonsai characteristics properly. The plant is local to the Indian subcontinent and China. It may reach a height of 6-10 inches. The dark green colour leaves permit the bush to be pruned intently. The bushes’ proclivity for sprouting on fresh wood simply adds to their beauty.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2020/07/7-2.png?fit=1080%2C1080&ssl=1',
+        price: 650.00),
+    Product(
+        id: '22',
+        category: 'tools',
+        name: 'Grafting Tools Set',
+        description:
+            'Buy grafting tools online at the best price in Bangladesh.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2020/07/Grafting-Tools-Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 1500.00),
+    Product(
+        id: '23',
+        category: 'tools',
+        name: 'Hand Push Sprayer',
+        description: 'There are no reviews yet.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2020/07/Water-Sprayer-Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+        price: 50.00),
+    Product(
+        id: '24',
+        category: 'tools',
+        name: 'Portable Folding Saw',
+        description:
+            'Buy portable folding saw online at the best price in Bangladesh. Buy gardening tools and accessories at low cost.',
+        imgUrl:
+            'https://i0.wp.com/treevaly.com/wp-content/uploads/2020/07/9.png?fit=1080%2C1080&ssl=1',
+        price: 400.00),
   ];
 
   List<Product> get items {
     return [..._items];
+  }
+
+  get id => null;
+
+  Product findById(String id) {
+    return _items.firstWhere((pdt) => pdt.id == id);
   }
 }
