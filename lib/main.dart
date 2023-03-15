@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:green_arot_flutter/consts/consts.dart';
+import 'package:green_arot_flutter/models/products.dart';
 import 'package:green_arot_flutter/screens/homepage.dart';
+import 'package:provider/provider.dart';
+import './screens/homepage.dart';
+// import './models/cart.dart';
+// import './screens/cart_screen';
 
 void main() {
   runApp(MyApp());
@@ -11,13 +16,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Green Arot',
-      theme: ThemeData(
-        primaryColor: lightGreen,
-        accentColor: darkGreen,
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider.value(
+          value: Products(),
+        ),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Green Arot',
+        theme: ThemeData(
+          primaryColor: lightGreen,
+          accentColor: darkGreen,
+        ),
+        home: HomePage(),
       ),
-      home: HomePage(),
     );
   }
 }
