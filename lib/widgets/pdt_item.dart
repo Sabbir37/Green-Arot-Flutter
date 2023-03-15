@@ -5,6 +5,7 @@ import 'package:green_arot_flutter/consts/consts.dart';
 import 'package:green_arot_flutter/models/products.dart';
 import 'package:green_arot_flutter/screens/pdt_detail_screen.dart';
 import 'package:provider/provider.dart';
+import '../models/cart.dart';
 
 class PdtItem extends StatelessWidget {
   final String name;
@@ -14,6 +15,7 @@ class PdtItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final pdt = Provider.of<Product>(context);
+    final cart = Provider.of<Cart>(context);
     return GestureDetector(
       onTap: () {
         Navigator.of(context)
@@ -28,7 +30,12 @@ class PdtItem extends StatelessWidget {
               title: Text(name),
               trailing: IconButton(
                 icon: Icon(Icons.shopping_cart),
-                onPressed: (null),
+                onPressed: () {
+                  // Scaffold.of(context).showInSnackBar(SnackBar(
+                  //     duration: Duration(seconds: 3),
+                  //     content: Text("Item added to the Cart")));
+                  // cart.addItem(pdt.id, pdt.name, pdt.price);
+                },
               ),
             ),
           )),

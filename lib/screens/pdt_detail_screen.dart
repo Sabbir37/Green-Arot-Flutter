@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:green_arot_flutter/consts/consts.dart';
 import 'package:green_arot_flutter/models/products.dart';
 import 'package:provider/provider.dart';
+import '../models/cart.dart';
 
 class DetailPage extends StatelessWidget {
   static const routeName = '/product-detail';
@@ -10,6 +11,7 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final productId = ModalRoute.of(context)?.settings.arguments as String;
     final loadedPdt = Provider.of<Products>(context).findById(productId);
+    final cart = Provider.of<Cart>(context);
     return Scaffold(
       backgroundColor: Colors.lightGreen,
       appBar: AppBar(
@@ -49,7 +51,9 @@ class DetailPage extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: null,
+        onPressed: () {
+          cart.addItem(productId, loadedPdt.name, loadedPdt.price);
+        },
         child: Icon(Icons.shopping_cart, size: 30),
       ),
     );

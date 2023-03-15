@@ -194,7 +194,7 @@ class Products with ChangeNotifier {
         category: 'bonsai',
         name: 'Fiscus Bonsai',
         description:
-            'https://i0.wp.com/treevaly.com/wp-content/uploads/2020/05/China-Bonsai-Treevaly.com_.png?fit=1080%2C1080&ssl=1',
+            "The Ficus genus belongs to the family of mulberry plants or Moraceae, and it's the most popular indoor tree species for Bonsai beginners.",
         imgUrl:
             'https://i0.wp.com/treevaly.com/wp-content/uploads/2020/05/China-Bonsai-Treevaly.com_.png?fit=1080%2C1080&ssl=1',
         price: 1500.00),
